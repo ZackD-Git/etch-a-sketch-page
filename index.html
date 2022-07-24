@@ -1,16 +1,16 @@
 <html ondragstart="return false;" ondrop="return false;">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>Zak-a-Sketch</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link href="style.css" rel="stylesheet">
+    <script defer src="script.js"></script>
 </head>
 <body>
 <div class="etch-a-sketch">
-    <div id="canvas" class="canvas">
+    <div class="canvas" id="canvas">
 
     </div>
     <div class="bottom-panel">
@@ -22,16 +22,16 @@
 <div class="tool-container">
     <div class="tool color">
         <label for="color-picker">Color: </label>
-        <input type="color" id="color-picker" value="#190202">
+        <input id="color-picker" type="color" value="#190202">
     </div>
     <div class="tool pixel-size">
         <label for="pixel-size">Pixels Across: </label>
-        <input type="range" id="pixel-size" min="10" max="50" step="10" value="10">
+        <input id="pixel-size" max="50" min="10" step="10" type="range" value="10">
         <output id="output">10</output>
     </div>
     <div class="tool grid">
         <label for="show-grid">Show Grid</label>
-        <input type="checkbox" id="show-grid" checked="false">
+        <input checked="false" id="show-grid" type="checkbox">
     </div>
     <button class="tool" id="clear-canvas">Clear Canvas</button>
 </div>

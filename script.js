@@ -11,7 +11,7 @@ window.onload = () => {
     refreshCanvas();
 }
 
-function refreshCanvas(){
+function refreshCanvas() {
     clearCanvas();
     createPixelArray();
     showCanvasGrid();
