@@ -19,17 +19,12 @@ body {
     font-size: large;
 }
 
-p {
-    font-size: 2rem;
-    color: gold;
-    font-style: italic;
-}
 
 .etch-a-sketch {
     background-color: var(--etchaSketchColor);
     margin-top: 16px;
-    width: 600px;
-    height: 630px;
+    width: 550px;
+    height: 550px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,17 +35,9 @@ p {
 .bottom-panel {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: inherit;
-}
-
-.dial {
-    background-color: var(--dialColor);
-    border-radius: 50%;
-    width: 90px;
-    aspect-ratio: 1;
-    margin: 0;
-    margin-inline: 60px;
+    margin: 8px;
 }
 
 .tool-container {
