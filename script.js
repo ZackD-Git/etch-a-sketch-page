@@ -7,12 +7,17 @@ const output = document.getElementById("output");
 let pixelsArray = [];
 let isDrawing = false;
 
-window.onloadstart = () => {
+window.onload = () => {
+    refreshCanvas();
+}
+
+function refreshCanvas(){
+    clearCanvas();
     createPixelArray();
+    showCanvasGrid();
 }
 
 function createPixelArray() {
-    clearCanvas();
     const pixelsSelected = parseInt(pixelSlider.value);
     pixelsArray = new Array(pixelsSelected * pixelsSelected);
     output.textContent = pixelSlider.value;
@@ -25,7 +30,6 @@ function createPixelArray() {
         canvas.appendChild(newPixel);
         pixelsArray[i] = newPixel;
     }
-    showCanvasGrid();
 }
 
 function clearCanvas() {
@@ -67,8 +71,8 @@ function colorPixels(e) {
 
 //fit to canvas
 
-clearCanvasBtn.addEventListener('click', clearCanvas);
+clearCanvasBtn.addEventListener('click', refreshCanvas);
 showGrid.addEventListener('change', showCanvasGrid);
-pixelSlider.addEventListener('change', createPixelArray);
+pixelSlider.addEventListener('change', refreshCanvas);
 window.addEventListener('mousedown', startDrawing);
 window.addEventListener('mouseup', stopDrawing);

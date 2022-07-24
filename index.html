@@ -1,4 +1,4 @@
-<html>
+<html ondragstart="return false;" ondrop="return false;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -20,7 +20,6 @@
     </div>
 </div>
 <div class="tool-container">
-    <button class="tool" id="clear-canvas">Clear Canvas</button>
     <div class="tool color">
         <label for="color-picker">Color: </label>
         <input type="color" id="color-picker" value="#190202">
@@ -34,6 +33,7 @@
         <label for="show-grid">Show Grid</label>
         <input type="checkbox" id="show-grid" checked="false">
     </div>
+    <button class="tool" id="clear-canvas">Clear Canvas</button>
 </div>
 
 </body>

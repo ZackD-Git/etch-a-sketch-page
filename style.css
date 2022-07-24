@@ -29,11 +29,11 @@ p {
     background-color: var(--etchaSketchColor);
     margin-top: 16px;
     width: 600px;
-    height: 600px;
+    height: 630px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 1%;
+    border-radius: 8%;
 
 }
 
@@ -47,9 +47,9 @@ p {
 .dial {
     background-color: var(--dialColor);
     border-radius: 50%;
-    width: 80px;
+    width: 90px;
     aspect-ratio: 1;
-    margin: 12px;
+    margin: 0;
     margin-inline: 60px;
 }
 
